@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boneto – Datenschutzerklärung</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #38ef7d; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        .highlight { background: #f8f9fa; padding: 15px; border-left: 4px solid #38ef7d; margin: 15px 0; }
+        .contact { background: #e8f4f8; padding: 15px; border-radius: 8px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Datenschutzerklärung für Boneto</h1>
+    <p><strong>Stand:</strong> Oktober 2026</p>
+
+    <h2>1. Verantwortliche Stelle</h2>
+    <div class="contact">
+        <p><strong>Verantwortlich für die Datenverarbeitung:</strong><br>
+        [Dein Name / Firmenname]<br>
+        [Straße und Hausnummer]<br>
+        [PLZ und Ort]<br>
+        E-Mail: [deine-email@example.com]</p>
+    </div>
+
+    <h2>2. Grundprinzip: 100 % lokale Datenverarbeitung</h2>
+    <div class="highlight">
+        <p><strong>Boneto ist eine lokale Finanz-App.</strong> Alle deine Finanzdaten werden ausschließlich auf deinem Gerät gespeichert und verarbeitet. Es findet <strong>keine Übertragung an Server</strong> des Entwicklers oder Dritter statt.</p>
+    </div>
+
+    <h2>3. Welche Daten werden lokal gespeichert?</h2>
+    <ul>
+        <li>Monate und Transaktionen (Einnahmen/Ausgaben mit Beträgen, Kategorien, Titeln)</li>
+        <li>Sparziele und deren Fortschritt</li>
+        <li>Regelmäßige Einträge (Fixkosten, Fixeinnahmen)</li>
+        <li>Gespeicherte Analysen und Berichte</li>
+        <li>Belegfotos, die du selbst aufnimmst oder auswählst</li>
+    </ul>
+
+    <h2>4. Berechtigungen und deren Zweck</h2>
+
+    <h3>4.1 Kamera (android.permission.CAMERA)</h3>
+    <p>Die Kamera wird <strong>ausschließlich</strong> verwendet, wenn du aktiv ein Belegfoto aufnimmst. Es gibt keine Hintergrundaufnahmen, keinen Zugriff ohne deine explizite Aktion. Die Fotos werden lokal auf deinem Gerät gespeichert.</p>
+
+    <h3>4.2 Benachrichtigungszugriff (BIND_NOTIFICATION_LISTENER_SERVICE) – optional</h3>
+    <div class="highlight">
+        <p><strong>Wichtig:</strong> Diese Berechtigung ist <strong>optional</strong> und erfordert deine <strong>explizite Freigabe</strong> in den Android-Systemeinstellungen.</p>
+    </div>
+    <p>Wenn du die Wallet-Benachrichtigungsfunktion aktivierst:</p>
+    <ul>
+        <li>Liest Boneto <strong>ausschließlich</strong> Benachrichtigungen der von dir <strong>ausgewählten</strong> Wallet- und Banking-Apps (z. B. Google Wallet, deine Banking-App)</li>
+        <li>Benachrichtigungen anderer Apps (SMS, WhatsApp, System, etc.) werden <strong>sofort verworfen</strong> und nicht analysiert</li>
+        <li>Aus den autorisierten Benachrichtigungen werden Betrag und Händler extrahiert, um automatisch lokale Transaktionen zu erstellen</li>
+        <li>Die Verarbeitung erfolgt zu <strong>100 % lokal</strong> auf deinem Gerät</li>
+        <li>Es erfolgt <strong>keine Übertragung</strong> an Server oder Dritte</li>
+        <li>Du kannst die Freigabe jederzeit in den Android-Einstellungen widerrufen</li>
+    </ul>
+
+    <h3>4.3 Speicherzugriff (READ/WRITE_EXTERNAL_STORAGE, nur Android ≤ 12)</h3>
+    <p>Wird nur verwendet, um Belegfotos zu speichern und Backups zu exportieren (nur auf deine explizite Aktion hin).</p>
+
+    <h3>4.4 Internet (android.permission.INTERNET)</h3>
+    <p>Wird von der Expo-Runtime benötigt. Boneto überträgt <strong>keine</strong> Finanzdaten über das Internet. Expo-Updates sind deaktiviert (<code>expo.modules.updates.ENABLED=false</code>).</p>
+
+    <h2>5. OCR/Texterkennung</h2>
+    <p>Belegfotos, die du zur Texterkennung analysieren lässt, werden vollständig und ausschließlich lokal auf deinem Gerät verarbeitet und <strong>nicht an Dritte oder externe Server übertragen</strong>.</p>
+
+    <h2>6. Backups</h2>
+    <p>Backups werden nur auf deine explizite Aktion hin erstellt und über den Android-Teilen-Dialog exportiert. Sie verbleiben unter deiner Kontrolle.</p>
+
+    <h2>7. Keine Analyse-Tools, kein Tracking, keine Werbung</h2>
+    <p>Boneto enthält:</p>
+    <ul>
+        <li>Keine Analyse- oder Tracking-Tools</li>
+        <li>Keine Werbung</li>
+        <li>Keine Cookies</li>
+        <li>Keine Übertragung von Nutzungsdaten</li>
+    </ul>
+
+    <h2>8. Deine Rechte</h2>
+    <p>Du hast jederzeit das Recht auf:</p>
+    <ul>
+        <li><strong>Auskunft:</strong> Alle Daten sind in der App einsehbar</li>
+        <li><strong>Löschung:</strong> Vollständige Löschung durch Deinstallation der App oder unter Einstellungen → Daten</li>
+        <li><strong>Widerruf:</strong> Berechtigungen können jederzeit in den Android-Einstellungen widerrufen werden</li>
+        <li><strong>Datenportabilität:</strong> Export aller Daten als Backup-Datei</li>
+    </ul>
+
+    <h2>9. Datensicherheit</h2>
+    <p>Deine Daten werden in einer lokalen SQLite-Datenbank auf deinem Gerät gespeichert. Die App verwendet keine Cloud-Speicherung.</p>
+
+    <h2>10. Änderungen dieser Datenschutzerklärung</h2>
+    <p>Bei Änderungen wirst du in der App informiert. Die aktuelle Version findest du immer unter dieser URL.</p>
+
+    <h2>11. Kontakt</h2>
+    <div class="contact">
+        <p>Bei Fragen zum Datenschutz:<br>
+        E-Mail: [deine-email@example.com]</p>
+    </div>
+
+    <p style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 14px;">
+        Diese Datenschutzerklärung wurde zuletzt am 6. Oktober 2026 aktualisiert.
+    </p>
+</body>
+</html>
